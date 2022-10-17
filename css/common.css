@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+
+html,body{ margin:0; }
+*{box-sizing: border-box;}
+
+div, dl, th, td, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, form, address, p, button, table, a {margin:0; padding:0; color:#737373; font-size:13px; font-family:'돋움', Dotum,sans-serif;}
+header, article, footer, aside, nav, address,figure{display:block;margin:0; padding:0;color:#737373;font-size:13px;font-family:'돋움', Dotum,sans-serif;}
+
+img, fieldset {border:0 none;}
+img{vertical-align:middle}
+
+
+
+ul,li{
+    list-style-type: none;
+    margin:0; padding:0;
+}
+
+a{text-decoration: none;}
+
