@@ -18,6 +18,10 @@
     padding-top: 50px;
 }
 
+.left-menu nav ul li:nth-child(1) a{
+    color: black;
+}
+
 .bm {
     display: none;
 }
@@ -120,7 +124,8 @@
 
 .left-menu>nav>ul>li>a {
     font-size: 1rem;
-    font-weight: 1000;
+    font-weight: 700;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 .left-menu>nav>ul>li>a:hover {
@@ -602,6 +607,7 @@ footer {
     }
 
     .usnav b {
+        font-family: 'Noto Sans KR', sans-serif;
         display: block;
         color: white;
         font-size: 45px;
@@ -619,6 +625,7 @@ footer {
     }
 
     .usnav ul li a {
+        font-family: 'Noto Sans KR', sans-serif;
         display: block;
         color: white;
         font-size: 16px;
