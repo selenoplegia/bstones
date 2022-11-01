@@ -23,6 +23,7 @@
     <link rel="icon" type="image/png" href="./img/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="./img/favicon-16x16.png" sizes="16x16" />
     <link rel="stylesheet" href="./css/about.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -61,15 +62,17 @@
         <main>
             <div class="main">
                 <div class="mobileimg">
-                    <p><img src="./img/img_about_mobile.png" alt=""></p>
+                    <p><img src="./img/img_about_mobile.png" alt="모바일용"></p>
                 </div>
                 <div class="content-1">
-                    <p><img src="./img/txt_info_01.png" alt=""></p>
+                    <p class="list01"><img src="./img/txt_info_01.png" alt="설명"></p>
+                    <p class="bginfo01"><img src="./img/bg_info_01.png" alt="뒷 라인"></p>
                 </div>
 
                 <div class="content-2">
-                    <div>
-                        <p><img src="./img/tit_brith.png" alt=""></p>
+                    <div class="bginfo02"><img src="./img/bg_year_line.gif" alt="뒷 라인"></div>
+                    <div class="list02">
+                        <p><img src="./img/tit_brith.png" alt="설명"></p>
                         <p>비스톤스는 UI개발사업부를 기반으로 2007년 설립된 이래 기획, 디자인 사업부를 포함 50명의 크리에이티브에 대한 열정을 가진 스탭으로 구성된 디지털 기업입니다.
                         </p>
                     </div>
@@ -77,7 +80,7 @@
 
 
                 <div class="content-3">
-                    <p><img src="./img/bg_year_obj(1).png" alt=""></p>
+                    <p class="obj"><img src="./img/bg_year_obj.png" alt=""></p>
                     <div>
                         <h3><img src="./img/tit_work.png" alt=""></h3>
                         <p>GUI Plan & Design, Web/Mobile site Plan & Consulting, Hybrid & Native App,<br>
@@ -93,7 +96,7 @@
 
                 <div class="content-4">
                     <h3><img src="./img/tit_organization.png" alt=""></h3>
-                    <ul>
+                    <ul class="list04">
                         <li>
                             <img src="./img/img_c.gif" alt="">
                             <b>CEO</b>
@@ -117,7 +120,7 @@
                                 Brand strategy</p>
                         </li>
                     </ul>
-                    <ul>
+                    <ul class="list05">
                         <li>
                             <img src="./img/img_u.gif" alt="">
                             <b>UI/UX</b>
@@ -147,8 +150,8 @@
                 </div>
 
                 <div class="content-5">
-                    <p><img src="./img/img_obj.png" alt=""></p>
-                    <p><img src="./img/txt_info_02.png" alt=""></p>
+                    <p class="list06"><img src="./img/img_obj.png" alt=""></p>
+                    <p class="list07"><img src="./img/txt_info_02.png" alt=""></p>
                 </div>
             </div>
         </main>
@@ -169,6 +172,7 @@
     </div>
 
     <script>
+
         const content = document.querySelector('.content');
         const xm = document.querySelector('.xm');
         const bm = document.querySelector('.bm');
@@ -197,6 +201,40 @@
             cg.style.display = "block";
             xm.style.display = "none";
         }
+
+
+
+        $(window).on('load', function () {
+            let aboutEvent = function () {
+                let win = $(window),
+                    _winW = win.width(),
+                    $start = $("div.content-1"),
+                    $brith = $("div.content-2"),
+                    $ourWork = $("div.content-3"),
+                    $orgList = $("div.content-4"),
+                    $bottomTxt = $("div.content-5")
+                    ;
+
+                win.on("scroll", function () {
+                    let _scrollTop = win.scrollTop();
+                    if (_scrollTop >= 100 && _scrollTop < 300) {
+                        $brith.find(".list02").addClass("active");
+                    } else if (_scrollTop >= 600 && _scrollTop < 700) {
+                        $ourWork.addClass("active");
+                    } else if (_scrollTop >= 1200 && _scrollTop < 1400) {
+                        $orgList.find(".list04, .list05").addClass("active");
+                    } else if (_scrollTop >= 1900 && _scrollTop < 2100) {
+                        $bottomTxt.find(".list06, .list07").addClass("active");
+                    }
+                })
+            }
+            aboutEvent();
+            if ($(window).width() >= 1600) {
+                $(".list01, .bginfo01").addClass("active");
+
+            }
+        })
+
 
     </script>
 

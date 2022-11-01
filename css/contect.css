@@ -451,11 +451,14 @@ footer {
     footer {
         border-top: 1px solid #e3e3e3;
         padding-top: 23px;
-        position: static;
+        position: absolute;
         left: 0%;
-        top: 0%;
+        top: 91%;
         text-align: center;
+        width: 100%;
     }
+
+    footer img{width:208px}
 
     /*나오는 네비*/
     .upnav{

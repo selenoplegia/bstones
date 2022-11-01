@@ -1,8 +1,8 @@
 @import url(./common.css);
 
-
 .wrap {
     position: relative;
+    overflow-x: hidden;
 }
 
 /* 좌측 헤더 css */
@@ -16,9 +16,11 @@
     align-items: center;
     position: fixed;
     padding-top: 50px;
+    z-index: 9999;
+    background-color: white;
 }
 
-.left-menu nav ul li:nth-child(1) a{
+.left-menu nav ul li:nth-child(1) a {
     color: black;
 }
 
@@ -57,7 +59,7 @@
 }
 
 .cg {
-    display: none ;
+    display: none;
 }
 
 
@@ -160,6 +162,7 @@
 /* 본문 */
 .main {
     height: 3330px;
+    overflow: hidden;
 }
 
 .mobileimg {
@@ -167,19 +170,55 @@
 }
 
 .content-1 {
-    overflow: hidden;
     position: absolute;
     left: 28.3%;
-    top: 8.7%
+    top: 8.7%;
 }
 
+.list01 {
+    transition: 1s;
+    transform: translateY(-300%);
+}
+
+.list01.active {
+    transform: translateY(0%);
+}
+
+.bginfo01{
+    position: absolute;
+    opacity: 0;
+    left: -33%;
+    top: -150%;
+    transform: translateY(50%);
+    transition: 1s;
+}
+
+.bginfo01.active{
+    opacity: 1;
+    transform: translateY(0%);
+}
 
 .content-2 {
     width: 295px;
-    overflow: hidden;
     position: absolute;
     left: 78.5%;
     top: 21%;
+}
+
+.list02 {
+    transition: 1s;
+    transform: translateY(500%);
+}
+
+.list02.active {
+
+    transform: translateY(0%);
+}
+
+.bginfo02{
+    position: absolute;
+    left: -406%;
+    top: -370%;
 }
 
 .content-2 div p:nth-of-type(2) {
@@ -194,6 +233,18 @@
     position: absolute;
     left: 16.5%;
     top: 33%;
+    transition: 1s;
+    transform: translateX(-102%);
+}
+
+.content-3.active {
+
+    transform: translateX(0%);
+}
+
+.obj{
+    position: relative;
+    left: -8%;
 }
 
 .content-3 div {
@@ -265,6 +316,26 @@
     display: block;
 }
 
+.list04 {
+    margin-bottom: 30px;
+    transform: translateX(110%);
+    transition: 1s;
+}
+
+.list04.active {
+    transform: translateX(0%);
+
+}
+
+.list05 {
+    transform: translateX(-100%);
+    transition: 1s;
+}
+
+.list05.active {
+    transform: translateX(0%);
+}
+
 .content-5 {
     display: flex;
     overflow: hidden;
@@ -277,6 +348,25 @@
     margin: 53px 0 0 90px;
 }
 
+.list06 {
+    transition: 1s;
+    transform: translateY(100%);
+}
+
+.list06.active {
+    transform: translateY(0%);
+}
+
+.list07 {
+    transition: 2s;
+    transform: translateY(100%);
+}
+
+.list07.active {
+    transform: translateY(0%);
+}
+
+
 
 
 
@@ -285,6 +375,7 @@ footer {
     position: fixed;
     left: 2.8%;
     top: 97.5%;
+    z-index: 9999;
 }
 
 .upnav {
@@ -303,7 +394,7 @@ footer {
 
     .wrap {
         position: relative;
-        height: 0;
+        height: auto;
     }
 
     /* 좌측 헤더 css */
@@ -356,7 +447,7 @@ footer {
         transition: 0.5s;
     }
 
-    .cg > p > img{
+    .cg>p>img {
         width: 50px;
     }
 
@@ -570,14 +661,16 @@ footer {
     /* 풋터 */
     footer {
         border-top: 1px solid #e3e3e3;
-        padding-top: 23px;
-        position: static;
-        margin: 50px;
-        padding-top: 50px;
+        padding: 30px 0;
+        position: absolute;
         left: 0%;
-        top: 0%;
+        top: 318%;
         text-align: center;
+        width: 100%;
+        z-index: 0;
     }
+
+    footer img{width:208px}
 
     /*나오는 네비*/
     .upnav {
@@ -593,7 +686,7 @@ footer {
         display: flex;
         flex-wrap: wrap;
         background-color: #252525;
-        z-index: 9999;
+        z-index: 9000;
     }
 
     .upnav.active {
