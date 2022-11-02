@@ -1,3 +1,4 @@
+window.onload = function(){
 const content = document.querySelector('.content');
 const abc = document.querySelectorAll('.content li');
 const upside = document.querySelector('.upside');
@@ -141,3 +142,4 @@ $.ajax({
         }
     }
 })
+}
