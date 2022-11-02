@@ -31,6 +31,7 @@ dd {
     align-items: center;
     position: fixed;
     padding-top: 50px;
+    background-color: white;
 }
 
 .left-menu nav ul li:nth-child(2) a {
@@ -179,6 +180,7 @@ dd {
     left: 16.5%;
     cursor: pointer;
 }
+
 
 .content ul {
     display: flex;
@@ -347,11 +349,11 @@ footer {
 
 
 .content-ex2 {
-    padding: 28% 15px;
+    padding: 28% 25px 28% 25px;
 }
 
 .content-ex2 h2 {
-    margin-bottom: 30px;
+    margin: 40px 0 50px 0;
     font-size: 25px;
     color: #252525;
 }
@@ -610,6 +612,12 @@ footer {
         left: 0;
         top: 75px;
         cursor: pointer;
+        transform: translateX(0%);
+        transition: 1s;
+    }
+
+    .content.active{
+        transform: translateX(-100%);
     }
 
     .content ul {
@@ -797,13 +805,14 @@ footer {
 
     .content-ex2 h2 {
         text-align: center;
-        margin-bottom: 30px;
+        margin: 23px;
         font-size: 25px;
         color: #252525;
     }
 
     .dl-box dt {
         color: #252525;
+        float: left;
     }
 
     .dl-box dd {
@@ -901,7 +910,6 @@ footer {
 
     /*나오는 네비*/
     .upnav {
-        background-color: white;
         position: fixed;
         height: 100%;
         width: 100%;
@@ -917,7 +925,7 @@ footer {
     }
 
     .upnav.active {
-        transform: translateX(-17%);
+        transform: translateX(-20%);
     }
 
     .usnav {
@@ -931,6 +939,7 @@ footer {
         color: white;
         font-size: 45px;
         margin: 30px 60px;
+        font-family: 'Secular One', sans-serif;
     }
 
     .usnav ul {}
@@ -946,8 +955,9 @@ footer {
     .usnav ul li a {
         display: block;
         color: white;
-        font-size: 16px;
+        font-size: 20px;
         margin: 16px auto;
+        font-family: 'Secular One', sans-serif;
     }
 
 
