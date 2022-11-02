@@ -452,9 +452,32 @@ footer {
 
 
 
+.last {
+    position: relative;
+    overflow: hidden;
+    margin: 20px auto 0 auto;
+    border-radius: 4px;
+}
+
+.last ul {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 200px;
+    list-style: none;
+}
+
 .last ul li {
     border-top: 1px solid #f1f1f1;
-    padding: 20px;
+    position: relative;
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    top: -20%;
+    width: 270px;
+    height: 300px;
+    text-align: center;
 }
 
 .last ul li p {

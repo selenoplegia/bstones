@@ -144,3 +144,47 @@ $.ajax({
         }
     }
 })
+
+
+jQuery(document).ready(function ($) {
+
+    let slideCount = $('.last ul li').length;
+    let slideWidth = $('.last ul li').width();
+    let slideHeight = $('.last ul li').height();
+    let sliderUlWidth = slideCount * slideWidth;
+
+    console.log(slideWidth);
+
+    $('.last').css({ width: slideWidth, height: slideHeight });
+
+    $('.last ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
+
+    $('.last ul li:last-child').prependTo('.last ul');
+
+    function moveLeft() {
+        $('.last ul').animate({
+            left: + slideWidth
+        }, 200, function () {
+            $('.last ul li:last-child').prependTo('.last ul');
+            $('.last ul').css('left', '');
+        });
+    };
+
+    function moveRight() {
+        $('.last ul').animate({
+            left: - slideWidth
+        }, 200, function () {
+            $('.last ul li:first-child').appendTo('.last ul');
+            $('.last ul').css('left', '');
+        });
+    };
+
+    $('.prev').click(function () {
+        moveLeft();
+    });
+
+    $('.next').click(function () {
+        moveRight();
+    });
+
+});
