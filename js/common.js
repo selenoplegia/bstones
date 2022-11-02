@@ -1,4 +1,3 @@
-window.onload = function(){
 const content = document.querySelector('.content');
 const abc = document.querySelectorAll('.content li');
 const upside = document.querySelector('.upside');
@@ -56,6 +55,7 @@ xm.onclick = function () {
 $.ajax({
     url: "./data.json",
     success: function (data) {
+
 
         
         abc.forEach(function(ele,idx){
@@ -126,7 +126,9 @@ $.ajax({
         
 
         $.each(data.items, function (j) {
-            topimg = this.topimg
+            topimg = this.topimg;
+            let loading = document.createElement('img');
+            loading.src = topimg;
 
             if(n == j){
                 tags = `<div class="middle-view">
@@ -142,4 +144,3 @@ $.ajax({
         }
     }
 })
-}
