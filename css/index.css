@@ -312,6 +312,7 @@ footer {
     transition: 0.5s;
     transform: translateY(-100%);
     z-index: 400;
+    transition: 1.2s;
 }
 
 .upside.active {
