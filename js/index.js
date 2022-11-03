@@ -1,14 +1,17 @@
-const content = document.querySelector('.content');
-const upnavinput = document.querySelectorAll('.content li');
-const slideinput = document.querySelectorAll('.last li');
-const upside = document.querySelector('.upside');
-const triggerMenu = document.querySelector('.trigger-menu');
-const xm = document.querySelector('.xm');
-const bm = document.querySelector('.bm');
-const upnav = document.querySelector('.upnav');
-const cg = document.querySelector('.cg');
+jQuery(document).ready(function ($) {
 
-jQuery(function ($) {
+    const content = document.querySelector('.content');
+    const upnavinput = document.querySelectorAll('.content li');
+    const slideinput = document.querySelectorAll('.last li');
+    const upside = document.querySelector('.upside');
+    const triggerMenu = document.querySelector('.trigger-menu');
+    const xm = document.querySelector('.xm');
+    const bm = document.querySelector('.bm');
+    const upnav = document.querySelector('.upnav');
+    const cg = document.querySelector('.cg');
+
+
+    //첫화면 페이드인 효과
     $(".content").css("display", "none");
     $(".content").fadeIn(2000);
     $("a.transition").click(function (event) {
@@ -19,110 +22,118 @@ jQuery(function ($) {
     function redirectPage() {
         window.location = linkLocation;
     }
-});
 
-function handleWindowSize() {
-    const windowWidth = window.innerWidth;
-    if (windowWidth > 480) {
-        cg.style.display = "none";
-    } else {
-        cg.style.display = "block";
+
+
+    function handleWindowSize() {
+        const windowWidth = window.innerWidth;
+        if (windowWidth > 480) {
+            cg.style.display = "none";
+        } else {
+            cg.style.display = "block";
+        }
     }
-}
-window.addEventListener("resize", handleWindowSize);
+    window.addEventListener("resize", handleWindowSize);
 
 
-bm.onclick = function () {
-    upnav.classList.add('active');
-    cg.style.display = "none";
-    xm.style.display = "block";
-    content.classList.add('active');
-}
-
-triggerMenu.onclick = function () {
-    upside.classList.remove('active');
-}
-xm.onclick = function () {
-    if (upnav.classList.contains('active') && upside.classList.contains('active')) {
-        upnav.classList.remove('active');
+    bm.onclick = function () {
+        upnav.classList.add('active');
         cg.style.display = "none";
         xm.style.display = "block";
-    } else if (upside.classList.contains('active')) {
+        content.classList.add('active');
+    }
+
+
+    triggerMenu.onclick = function () {
         upside.classList.remove('active');
-        cg.style.display = "block";
-        xm.style.display = "none";
-        content.classList.remove('active');
-    } else if (upnav.classList.contains('active')) {
-        upnav.classList.remove('active');
-        content.classList.remove('active');
-        cg.style.display = "block";
-        xm.style.display = "none";
-    } else {
-        cg.style.display = "block";
-        xm.style.display = "none";
     }
-}
-
-let btn = $('.scrolltop');
-
-$(window).scroll(function () {
-    if ($(window).scrollTop() > 500) {
-        btn.addClass('show');
-    } else {
-        btn.removeClass('show');
+    xm.onclick = function () {
+        if (upnav.classList.contains('active') && upside.classList.contains('active')) {
+            upnav.classList.remove('active');
+            cg.style.display = "none";
+            xm.style.display = "block";
+        } else if (upside.classList.contains('active')) {
+            upside.classList.remove('active');
+            cg.style.display = "block";
+            xm.style.display = "none";
+            content.classList.remove('active');
+        } else if (upnav.classList.contains('active')) {
+            upnav.classList.remove('active');
+            content.classList.remove('active');
+            cg.style.display = "block";
+            xm.style.display = "none";
+        } else {
+            cg.style.display = "block";
+            xm.style.display = "none";
+        }
     }
-});
-
-btn.on('click', function (e) {
-    e.preventDefault();
-    $('html, body').animate({ scrollTop: 0 }, '300');
-});
-
-
-$.ajax({
-    url: "./data.json",
-    success: function (data) {
 
 
 
-        upnavinput.forEach(function (ele, idx) {
-            ele.onclick = function () {
-                upside.classList.add('active');
-                cg.style.display = "none";
-                xm.style.display = "block";
-                item(idx)
-            }
-        })
 
-        slideinput.forEach(function (ele, idx) {
-            ele.onclick = function () {
-                $('.information, .input2').fadeOut(1000);
-                upside.classList.add('active');
-                cg.style.display = "none";
-                xm.style.display = "block";
-                setTimeout(() => {
+    //맨위로 가는 버튼
+    let btn = $('.scrolltop');
+
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 500) {
+            btn.addClass('show');
+        } else {
+            btn.removeClass('show');
+        }
+    });
+
+    btn.on('click', function (e) {
+        e.preventDefault();
+        $('html, body').animate({ scrollTop: 0 }, '300');
+    });
+
+
+
+    // 서브화면 아작스
+    $.ajax({
+        url: "./data.json",
+        success: function (data) {
+
+
+
+            upnavinput.forEach(function (ele, idx) {
+                ele.onclick = function () {
+                    upside.classList.add('active');
+                    cg.style.display = "none";
+                    xm.style.display = "block";
                     item(idx)
-                }, 1000);
-                $('.information, .input2').fadeIn(1000);
-            }
-        })
+                }
+            })
+
+            slideinput.forEach(function (ele, idx) {
+                ele.onclick = function () {
+                    $('.information, .input2').fadeOut(1000);
+                    upside.classList.add('active');
+                    cg.style.display = "none";
+                    xm.style.display = "block";
+                    setTimeout(() => {
+                        item(idx)
+                    }, 1000);
+                    $('.information, .input2').fadeIn(1000);
+                }
+            })
 
 
-        function item(n) {
-            let tags = '', name, category, date, client, concept, role, topimg, alt;
+            function item(n) {
+                let tags = '', name, category, date, client, concept, role, topimg, alt;
 
 
 
-            $.each(data.items, function (i) {
-                name = this.name
-                date = this.date
-                category = this.category
-                client = this.client
-                concept = this.concept
-                role = this.role
+                $.each(data.items, function (i) {
+                    name = this.name
+                    date = this.date
+                    category = this.category
+                    client = this.client
+                    concept = this.concept
+                    role = this.role
 
-                if (n == i) {
-                    tags = `<div class="content-ex2">
+                    if (n == i) {
+                        tags = `<div class="content-ex2">
                         <div class="mbh2">
                             <h2>${name}</h2>
                         </div>
@@ -160,39 +171,39 @@ $.ajax({
                             </ul>
                         </dl>
                     </div>`
-                        ;
-                }
-            })
-            $('.input').html(tags);
+                            ;
+                    }
+                })
+                $('.input').html(tags);
 
 
-            $.each(data.items, function (j) {
-                topimg = this.topimg;
-                alt = this.alt;
-                let loading = document.createElement('img');
-                loading.src = topimg;
+                $.each(data.items, function (j) {
+                    topimg = this.topimg;
+                    alt = this.alt;
+                    let loading = document.createElement('img');
+                    loading.src = topimg;
 
-                if (n == j) {
-                    tags = `<div class="middle-view">
+                    if (n == j) {
+                        tags = `<div class="middle-view">
                         <div class="middle-img">
                             <img src="${topimg}" alt="${alt}">
                         </div>
                     </div>
                 </div>`
-                ;
-                }
-            })
-            $('.input2').html(tags);
+                            ;
+                    }
+                })
+                $('.input2').html(tags);
+            }
         }
-    }
-})
+    })
 
 
 
 
 
-jQuery(document).ready(function ($) {
 
+    // 서브메뉴 슬라이드
     let slideCount = $('.last ul li').length;
     let slideWidth = $('.last ul li').width();
     let slideHeight = $('.last ul li').height();
