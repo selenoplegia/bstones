@@ -96,10 +96,14 @@ $.ajax({
 
         slideinput.forEach(function (ele, idx) {
             ele.onclick = function () {
-                upside.classList.add('active');
-                cg.style.display = "none";
-                xm.style.display = "block";
-                item(idx)
+                $('.information, .input2').fadeOut(1000);
+                    upside.classList.add('active');
+                    cg.style.display = "none";
+                    xm.style.display = "block";
+                setTimeout(() => {
+                    item(idx)
+                    }, 1000);
+                $('.information, .input2').fadeIn(1000);
             }
         })
 

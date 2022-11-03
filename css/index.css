@@ -25,6 +25,7 @@ dd {
     width: 16.5%;
     height: 100%;
     border: 1px solid #f1f1f1;
+    border-top: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -267,7 +268,7 @@ dd {
         opacity .5s, visibility .5s;
     opacity: 0;
     visibility: hidden;
-    z-index: 1000;
+    z-index: 300;
 }
 
 .scrolltop::after {
@@ -317,14 +318,28 @@ footer {
     transform: translateY(0%);
 }
 
+.sd{
+    display: block;
+    width: 16.5%;
+    height: 100%;
+    border-right: 1px solid #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    padding-top: 50px;
+    background-color: white;
+}
+
 .trigger-menu {
     width: 30px;
     height: 16px;
     position: absolute;
     background: none;
     border: none;
-    left: 7%;
-    top: 8%;
+    left: 42%;
+    top: 13%;
     cursor: pointer;
 }
 
@@ -354,6 +369,7 @@ footer {
     display: block;
     border: 1px solid #f1f1f1;
     background-color: white;
+    border-left: 0;
 }
 
 .content-ex1 {
@@ -373,18 +389,22 @@ footer {
     background-image: url(../img/icon_facebook.gif);
     background-repeat: no-repeat;
     background-position: 50% 50%;
+    border-left: 0;
 }
 
 .content-ex1 a:nth-child(2) {
     background-image: url(../img/icon_tweeter.gif);
     background-repeat: no-repeat;
     background-position: 50% 50%;
+    border-left: 0;
+    border-right: 0;
 }
 
 .content-ex1 a:nth-child(3) {
     background-image: url(../img/icon_pinterest.gif);
     background-repeat: no-repeat;
     background-position: 50% 50%;
+    border-right: 0;
 }
 
 
@@ -464,6 +484,7 @@ footer {
     width: 16.1%;
     height: 100vh;
     border: 1px solid #f1f1f1;
+    border-top: 0;
     position: absolute;
     left: 83.9%;
     cursor: pointer;
@@ -478,6 +499,7 @@ footer {
     flex-grow: 1;
     padding: 50px;
     border: 1px solid #f1f1f1;
+    border-left: 0;
 }
 
 .control ul li:nth-child(1) {
@@ -759,7 +781,7 @@ footer {
         transition: background-color .3s, opacity .5s, visibility .5s;
         opacity: 0;
         visibility: hidden;
-        z-index: 1000;
+        z-index: 300;
     }
     
     .scrolltop::after {
@@ -825,6 +847,10 @@ footer {
 
     .upside.active {
         transform: translateY(0%);
+    }
+
+    .sd{
+        display: none;
     }
 
     .trigger-menu {
@@ -903,6 +929,7 @@ footer {
         background-image: url(../img/icon_pinterest.gif);
         background-repeat: no-repeat;
         background-position: 50% 50%;
+
     }
 
 
