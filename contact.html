@@ -23,8 +23,8 @@
     <link rel="icon" type="image/png" href="./img/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="./img/favicon-16x16.png" sizes="16x16" />
     <link rel="stylesheet" href="./css/contect.css">
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script defer src="./js/common.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script defer src="./js/contact.js"></script>
 </head>
 
 <body>
@@ -108,40 +108,6 @@
             </ul>
         </nav>
     </div>
-
-    <script>
-
-        const content = document.querySelector('.content');
-        const xm = document.querySelector('.xm');
-        const bm = document.querySelector('.bm');
-        const upnav = document.querySelector('.upnav');
-        const cg = document.querySelector('.cg');
-
-        function handleWindowSize() {
-            const windowWidth = window.innerWidth;
-            if (windowWidth > 480) {
-                cg.style.display = "none";
-            } else {
-                cg.style.display = "block";
-            }
-        }
-        window.addEventListener("resize", handleWindowSize);
-
-        bm.onclick = function () {
-            upnav.classList.add('active');
-            cg.style.display = "none";
-            xm.style.display = "block";
-        }
-
-
-        xm.onclick = function () {
-            upnav.classList.remove('active');
-            cg.style.display = "block";
-            xm.style.display = "none";
-        }
-
-    
-    </script>
 
 
 </body>
