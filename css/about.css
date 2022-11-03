@@ -635,6 +635,14 @@ footer {
         height: 100%;
     }
 
+    .tablet01{
+        display: none;
+    }
+
+    .tablet02{
+        display: none;
+    }
+    
     .mobileimg {
         top: 75px;
         display: block;
