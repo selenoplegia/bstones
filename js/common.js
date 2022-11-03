@@ -8,16 +8,16 @@ const bm = document.querySelector('.bm');
 const upnav = document.querySelector('.upnav');
 const cg = document.querySelector('.cg');
 
-jQuery(function($) {
+jQuery(function ($) {
     $(".content").css("display", "none");
     $(".content").fadeIn(2000);
-    $("a.transition").click(function(event){
+    $("a.transition").click(function (event) {
         event.preventDefault();
         linkLocation = this.href;
         $(".content").fadeOut(1000, redirectPage);
     });
     function redirectPage() {
-    window.location = linkLocation;
+        window.location = linkLocation;
     }
 });
 
@@ -97,12 +97,12 @@ $.ajax({
         slideinput.forEach(function (ele, idx) {
             ele.onclick = function () {
                 $('.information, .input2').fadeOut(1000);
-                    upside.classList.add('active');
-                    cg.style.display = "none";
-                    xm.style.display = "block";
+                upside.classList.add('active');
+                cg.style.display = "none";
+                xm.style.display = "block";
                 setTimeout(() => {
                     item(idx)
-                    }, 1000);
+                }, 1000);
                 $('.information, .input2').fadeIn(1000);
             }
         })
@@ -174,12 +174,12 @@ $.ajax({
 
                 if (n == j) {
                     tags = `<div class="middle-view">
-                    <div class="middle-img">
-                        <img src="${topimg}" alt="${alt}">
+                        <div class="middle-img">
+                            <img src="${topimg}" alt="${alt}">
+                        </div>
                     </div>
-                </div>
-            </div>`
-                        ;
+                </div>`
+                ;
                 }
             })
             $('.input2').html(tags);
