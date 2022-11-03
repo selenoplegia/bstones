@@ -7,7 +7,8 @@
             "client":"본아이에프/메이트/디메이트",
             "concept":"본죽의 맞춤죽 관련 프로모션 진행. MBTI 형식과 일러스트 작가와의 협업으로 고객 참여를 유도",
             "role":"<li>Design</li><li>Planning</li><li>Script</li><li>HTML</li><li>Development</li>",
-            "topimg":"./img/C_t_20210513.jpg"
+            "topimg":"./img/C_t_20210513.jpg",
+            "alt":"본죽"
         },
         {
             "name": "삼성전자 렛츠탭챌린지",
@@ -16,7 +17,8 @@
             "client":"삼성전자/제일기획",
             "concept":"갤럭시 탭 사용자 및 일반 고객을 타겟으로 진행한 프로모션. 탭 활용기 및 박태준 작가와의 콜라보 이미지 공유 프로모션 진행",
             "role":"<li>Design</li><li>Planning</li><li>Script</li><li>HTML</li><li>Development</li>",
-            "topimg":"./img/C_t_20210512.jpg"
+            "topimg":"./img/C_t_20210512.jpg",
+            "alt":"렛츠탭 챌린지"
         },
         {
             "name": "삼성전자 Join the BESPOKE",
@@ -25,7 +27,8 @@
             "client":"삼성전자/제일기획",
             "concept":"삼성전자 비스포크의 2021 상반기 신규 캠페인 Join the BESPOKE의 프로모션 진행",
             "role":"<li>Design</li><li>Planning</li><li>Script</li><li>HTML</li><li>Development</li>",
-            "topimg":"./img/C_t_join.jpg"
+            "topimg":"./img/C_t_join.jpg",
+            "alt":"join the bespoke"
         },
         {
             "name": "삼성전자 갤럭시 페스타",
@@ -34,7 +37,8 @@
             "client":"삼성전자/제일기획",
             "concept":"갤럭시 S21로 촬영한 사진/동영상을 올리는 고객 콘테스트로 진행.",
             "role":"<li>Design</li><li>Planning</li><li>Script</li><li>HTML</li><li>Development</li>",
-            "topimg":"./img/C_t_con.jpg"
+            "topimg":"./img/C_t_con.jpg",
+            "alt":"갤럭시 페스타"
         },
         {
             "name": "비맥스",
@@ -43,7 +47,8 @@
             "client":"GC녹십자 / SM C&C",
             "concept":"비타민 전문 브랜드 비맥스 웹사이트 리뉴얼 및 운영",
             "role":"<li>Design</li><li>Planning</li><li>Script</li><li>HTML</li><li>Development</li>",
-            "topimg":"./img/C_t_b.jpg"
+            "topimg":"./img/C_t_b.jpg",
+            "alt":"비맥스"
         },
         {
             "name": "포스트 그래놀라 홈브런치",
@@ -52,7 +57,8 @@
             "client":"동서/디메이트",
             "concept":"코로나 시대, 집에서 즐길 수 있는 브런치 관련 포스트 그래놀라 프로모션 진행",
             "role":"<li>Design</li><li>Planning</li><li>Script</li><li>HTML</li><li>Development</li>",
-            "topimg":"./img/C_t_brunch.jpg"
+            "topimg":"./img/C_t_brunch.jpg",
+            "alt":"홈브런치"
         },
         {
             "name": "동서티백 풍등 프로모션",
@@ -61,7 +67,9 @@
             "client":"동서/디메이트",
             "concept":"동서티백의 신년 프로모션. 풍등을 모티브로 자신의 신년 플랜을 올리는 프로모션 진행",
             "role":"<li>Design</li><li>Planning</li><li>Script</li><li>HTML</li><li>Development</li>",
-            "topimg":"./img/C_t_new.jpg"
+            "topimg":"./img/C_t_new.jpg",
+            "alt":"풍등 프로모션"
+
         },
         {
             "name": "삼성전자 갤럭시 스테이지",
@@ -70,7 +78,8 @@
             "client":"삼성전자/제일기획",
             "concept":"갤럭시 S21의 콘텐츠 프로모션. 유재석, 펭수 등 셀럽들과 갤럭시 S21의 콜라보레이션 콘텐츠 및 프로모션 제공",
             "role":"<li>Design</li><li>Planning</li><li>Script</li><li>HTML</li>",
-            "topimg":"./img/C_t_stage.jpg"
+            "topimg":"./img/C_t_stage.jpg",
+            "alt":"갤럭시 스테이지"
         },
         {
             "name": "포스트 시리얼바 CBTI",
@@ -79,7 +88,8 @@
             "client":"동서/디메이트",
             "concept":"동서 포스트 시리얼바와 연계한 MBTI 이벤트 구축 및 운영",
             "role":"<li>Design</li><li>Planning</li><li>Script</li><li>HTML</li><li>Development</li>",
-            "topimg":"./img/C_t_cbti.jpg"
+            "topimg":"./img/C_t_cbti.jpg",
+            "alt":"포스트 시리얼바"
         },
         {
             "name": "셀럽브랜드",
@@ -88,7 +98,8 @@
             "client":"SM C&C",
             "concept":"셀럽들이 직접 참여해 제작하는 제품 콘텐츠를 제공하는 셀럽브랜드 웹 구축 및 운영",
             "role":"<li>Design</li><li>Planning</li><li>Script</li><li>HTML</li><li>Development</li>",
-            "topimg":"./img/C_t_celeb.jpg"
+            "topimg":"./img/C_t_celeb.jpg",
+            "alt":"샐럽브랜드"
         },
         {
             "name": "동서 티백아트 콘테스트 2차",
@@ -97,7 +108,8 @@
             "client":"동서/디메이트",
             "concept":"2019년에 이어 동서 티백아트 콘테스트 구축 및 운영",
             "role":"<li>Design</li><li>Planning</li><li>Script</li><li>HTML</li><li>Development</li>",
-            "topimg":"./img/C_t_teaart.jpg"
+            "topimg":"./img/C_t_teaart.jpg",
+            "alt":"티백아트 콘테스트"
         },
         {
             "name": "포스트 콘푸라이트 플레이하우스",
@@ -106,7 +118,8 @@
             "client":"동서/디메이트",
             "concept":"동서 포스트 콘푸라이트 프로모션. 즉석당첨 프로세스를 통해 실제 제작된 페이퍼 플레이하우스 증정",
             "role":"<li>Design</li><li>Planning</li><li>Script</li><li>HTML</li><li>Development</li>",
-            "topimg":"./img/C_t_dad.jpg"
+            "topimg":"./img/C_t_dad.jpg",
+            "alt":"플레이하우스"
         },
         {
             "name": "동서 캐모마일 현미녹차 프로모션",
@@ -115,7 +128,8 @@
             "client":"동서/디메이트",
             "concept":"동서 캐모마일 현미녹차 프로모션으로 실제 제품 및 다양한 오브제를 통해 미니 정원을 꾸미고 공유할 수 있는 이벤트 진행",
             "role":"<li>Design</li><li>Planning</li><li>Script</li><li>HTML</li><li>Development</li>",
-            "topimg":"./img/C_t_camo.jpg"
+            "topimg":"./img/C_t_camo.jpg",
+            "alt":"현미녹차"
         },
         {
             "name": "포스트 현미 그래놀라 프로모션",
@@ -124,7 +138,8 @@
             "client":"동서/디메이트",
             "concept":"포스트 현미 그래놀라 프로모션. 몸에 좋은 현미, 그래놀라 등의 요소를 강조하는 프로모션 진행",
             "role":"<li>Design</li><li>Planning</li><li>Script</li><li>HTML</li><li>Development</li>",
-            "topimg":"./img/C_t_hyun.jpg"
+            "topimg":"./img/C_t_hyun.jpg",
+            "alt":"그래놀라"
         },
         {
             "name": "오레오 오즈 클래스",
@@ -133,7 +148,8 @@
             "client":"동서/디메이트",
             "concept":"오레오 오즈의 신규 TVC와 연계한 프로모션. TVC 내용 중 무중력 클래스를 제공하는 게임형 프로모션 등을 제작",
             "role":"<li>Design</li><li>Planning</li><li>Script</li><li>HTML</li><li>Development</li>",
-            "topimg":"./img/C_t_os.jpg"
+            "topimg":"./img/C_t_os.jpg",
+            "alt":"오레오 오즈"
         },
         {
             "name": "라이스N프로틴 프로모션",
@@ -142,7 +158,8 @@
             "client":"동서/디메이트",
             "concept":"포스트 라이스N프로틴의 프로모션웹. 프로틴 트렌드에 맞춰 해당 요소를 강조하는 프로모션안으로 진행",
             "role":"<li>Design</li><li>Planning</li><li>Script</li><li>HTML</li><li>Development</li>",
-            "topimg":"./img/C_t_pro.jpg"
+            "topimg":"./img/C_t_pro.jpg",
+            "alt":"라이스프로틴"
         },
         {
             "name": "포스트 그래놀라 패밀리퀴즈쇼",
@@ -151,7 +168,8 @@
             "client":"동서/디메이트",
             "concept":"동서 포스트 그래놀라 패밀리 퀴즈쇼 TVC와 연계한 프로모션 진행",
             "role":"<li>Design</li><li>Planning</li><li>Script</li><li>HTML</li><li>Development</li>",
-            "topimg":"./img/C_t_quiz.jpg"
+            "topimg":"./img/C_t_quiz.jpg",
+            "alt":"패밀리퀴즈쇼"
         },
         {
             "name": "본도시락 바싹한상",
@@ -160,7 +178,8 @@
             "client":"본아이에프/메이트/디메이트",
             "concept":"본도시락의 바싹불고기 메뉴를 연계한 프로모션 진행. 어워드 형식으로 참여자가 직접 상장을 제작하고 공유하는 이벤트 진행",
             "role":"<li>Design</li><li>Planning</li><li>Script</li><li>HTML</li><li>Development</li>",
-            "topimg":"./img/C_t_bon.jpg"
+            "topimg":"./img/C_t_bon.jpg",
+            "alt":"바짝한상"
         },
         {
             "name": "삼성닷컴 BESPOKE 비플레이스",
@@ -169,7 +188,8 @@
             "client":"삼성전자/제일기획/펑타이코리아",
             "concept":"삼성전자 비스포크 냉장고를 체험할 수 있는 비플레이스 프로모션 제작 및 운영 (2차 리뉴얼 진행)",
             "role":"<li>Design</li><li>Planning</li><li>Script</li><li>HTML</li>",
-            "topimg":"./img/C_t_bp.jpg"
+            "topimg":"./img/C_t_bp.jpg",
+            "alt":"비플레이스"
         },
         {
             "name": "동서 포스트 오곡코코볼바",
@@ -178,7 +198,8 @@
             "client":"동서식품/디메이트",
             "concept":"동서 포스트 오곡코코볼바 프로모션 웹사이트 제작",
             "role":"<li>Design</li><li>Planning</li><li>Script</li><li>HTML</li><li>Development</li>",
-            "topimg":"./img/C_t_bar.jpg"
+            "topimg":"./img/C_t_bar.jpg",
+            "alt":"오곡코코볼바"
         },
         {
             "name": "AhnLab SMB Place",
@@ -187,7 +208,8 @@
             "client":"안랩",
             "concept":"국내 1위 보안 기업 안랩의 중소기업용 보안 프로그램 브랜딩 사이트 제작. 중소기업용 보안프로그램 소개 및 구입, 그 외 매거진 콘텐츠 운영",
             "role":"<li>Design</li><li>Planning</li><li>Script</li><li>HTML</li><li>Development</li>",
-            "topimg":"./img/C_t_ahn.jpg"
+            "topimg":"./img/C_t_ahn.jpg",
+            "alt":"안랩"
         },
         {
             "name": "동서 티백 레시피",
@@ -196,7 +218,8 @@
             "client":"동서식품/디메이트",
             "concept":"동서 티백 관련 레시피와 이미지를 올리는 프로모션 진행",
             "role":"<li>Design</li><li>Planning</li><li>Script</li><li>HTML</li><li>Development</li>",
-            "topimg":"./img/C_t_rec.jpg"
+            "topimg":"./img/C_t_rec.jpg",
+            "alt":"티백 레시피"
         },
         {
             "name": "삼성닷컴 갤럭시 스튜디오(갤럭시 S20)",
@@ -205,7 +228,8 @@
             "client":"삼성전자/제일기획/펑타이코리아",
             "concept":"삼성전자 갤럭시 S20 출시에 맞춰 오픈한 프로모션 콘텐츠. 제품의 다양한 기능과 프로모션, 스튜디오 정보 등을 담은 콘텐츠 제공",
             "role":"<li>Design</li><li>Planning</li><li>Script</li><li>HTML</li><li>Development</li>",
-            "topimg":"./img/C_t_gs2.jpg"
+            "topimg":"./img/C_t_gs2.jpg",
+            "alt":"갤럭시 스튜디오"
         },
         {
             "name": "동서 포스트 그래놀라",
@@ -214,7 +238,8 @@
             "client":"동서식품/디메이트",
             "concept":"동서 포스크 그래놀라 제품의 프로모션 웹사이트 제작",
             "role":"<li>Design</li><li>Planning</li><li>Script</li><li>HTML</li><li>Development</li>",
-            "topimg":"./img/C_t_mi.jpg"
+            "topimg":"./img/C_t_mi.jpg",
+            "alt":"그래놀라"
         },
         {
             "name": "대한항공 Let's Go Everywhere",
@@ -223,7 +248,8 @@
             "client":"대한항공/SM C&C",
             "concept":"SuperM과 함께하는 글로벌 캠페인 Let's Go Everywhere 웹 구축 및 유튜브 채널 운영",
             "role":"<li>Design</li><li>Planning</li><li>Script</li><li>HTML</li><li>Development</li>",
-            "topimg":"./img/C_t_korea.jpg"
+            "topimg":"./img/C_t_korea.jpg",
+            "alt":"대한항공"
         },
         {
             "name": "동서 티백아트 콘테스트",
@@ -232,7 +258,8 @@
             "client":"동서식품/디메이트커뮤니케이션즈",
             "concept":"제1회 동서식품 티백아트 콘테스트 프로모션 제작. 동서 티백에 직접 그린 그림과 글을 모집하는 콘테스트 콘텐츠",
             "role":"<li>Design</li><li>Planning</li><li>Script</li><li>HTML</li><li>Development</li>",
-            "topimg":"./img/C_t_art.jpg"
+            "topimg":"./img/C_t_art.jpg",
+            "alt":"티백아트 콘테스트"
         },
         {
             "name": "휴앤케어",
@@ -241,7 +268,8 @@
             "client":"삼양인터내셔널",
             "concept":"국내 해충 방지 업체인 삼양인터내셔널의 휴앤케어 웹사이트 구축 및 운영",
             "role":"<li>Design</li><li>Planning</li><li>Script</li><li>HTML</li><li>Development</li>",
-            "topimg":"./img/C_t_hu.jpg"
+            "topimg":"./img/C_t_hu.jpg",
+            "alt":"휴앤케어"
         },
         {
             "name": "유한킴벌리 라네이처 시그니처",
@@ -250,7 +278,8 @@
             "client":"유한킴벌리/SM C&C",
             "concept":"유한킴벌리의 유기농 생리대 라네이처의 신규 라인인 시그니처 관련 프로모션 진행",
             "role":"<li>Design</li><li>Planning</li><li>Script</li><li>HTML</li><li>Development</li>",
-            "topimg":"./img/C_t_la.jpg"
+            "topimg":"./img/C_t_la.jpg",
+            "alt":"라네이처 시그니처"
         },
         {
             "name": "삼성닷컴 갤럭시 필름 페스타",
@@ -259,7 +288,8 @@
             "client":"삼성전자/제일기획/펑타이코리아",
             "concept":"Galaxy가 개최하는 스마트폰 영화제인 Galaxy Film Festa 프로모션 페이지 제작 및 운영 (2차 리뉴얼 진행)",
             "role":"<li>Design</li><li>Planning</li><li>Script</li><li>HTML</li>",
-            "topimg":"./img/C_t_gf.jpg"
+            "topimg":"./img/C_t_gf.jpg",
+            "alt":"필름 페스타"
         },
         {
             "name": "KTB 투자증권 회사소개 웹사이트 리뉴얼",
@@ -268,7 +298,8 @@
             "client":"KTB 투자증권",
             "concept":"KTB 투자증권 회사소개 부문 리뉴얼 진행",
             "role":"<li>Design</li><li>Planning</li><li>Script</li><li>HTML</li><li>Development</li>",
-            "topimg":"./img/C_t_ktb.jpg"
+            "topimg":"./img/C_t_ktb.jpg",
+            "alt":"KTB 투자증권"
         },
         {
             "name": "삼성닷컴 The Sero 크리에이터",
@@ -277,7 +308,8 @@
             "client":"삼성전자/제일기획/펑타이코리아",
             "concept":"삼성전자 세로 TV 출시와 연계해 진행한 프로모션. 세로형 콘텐츠 제작 크리에이터를 모집하는 프로모션으로 진행",
             "role":"<li>Design</li><li>Planning</li><li>Script</li><li>HTML</li>",
-            "topimg":"./img/C_t_sero.jpg"
+            "topimg":"./img/C_t_sero.jpg",
+            "alt":"세로 크리에이터"
         },
         {
             "name": "삼성닷컴 BESPOKE 홈스타일링 컨테스트",
@@ -286,7 +318,8 @@
             "client":"삼성전자/제일기획/펑타이코리아",
             "concept":"비스포크 냉장고 인테리어 사진을 응모 받는 컨테스트 페이지 제작",
             "role":"<li>Design</li><li>Planning</li><li>Script</li><li>HTML</li>",
-            "topimg":"./img/C_t_home.jpg"
+            "topimg":"./img/C_t_home.jpg",
+            "alt":"홈스타일링 컨테스트"
         },
         {
             "name": "삼성닷컴 갤럭시 스튜디오(갤럭시 노트 10)",
@@ -295,7 +328,8 @@
             "client":"삼성전자/제일기획/펑타이코리아",
             "concept":"삼성전자 갤럭시 노트10 출시에 맞춰 오픈한 프로모션 콘텐츠. 갤럭시 노트10의 다양한 기능과 프로모션, 스튜디오 정보 등을 담은 콘텐츠 제공",
             "role":"<li>Design</li><li>Planning</li><li>Script</li><li>HTML</li><li>Development</li>",
-            "topimg":"./img/C_t_gs.jpg"
+            "topimg":"./img/C_t_gs.jpg",
+            "alt":"갤럭시 스튜디오"
         },
         {
             "name": "삼성닷컴 텐화점",
@@ -304,7 +338,8 @@
             "client":"삼성전자/제일기획/펑타이코리아",
             "concept":"삼성전자의 콜라보 굿즈 및 관련 이벤트 정보를 제공하는 콘텐츠 제작",
             "role":"<li>Design</li><li>Planning</li><li>Script</li><li>HTML</li>",
-            "topimg":"./img/C_t_ten.jpg"
+            "topimg":"./img/C_t_ten.jpg",
+            "alt":"텐화점"
         },
         {
             "name": "삼성닷컴 BESPOKE 냉장고 티징",
@@ -313,7 +348,8 @@
             "client":"삼성전자/제일기획/펑타이코리아",
             "concept":"삼성전자의 비스포크 냉장고 런칭 프로모션 제작",
             "role":"<li>Design</li><li>Planning</li><li>Script</li><li>HTML</li><li>Development</li>",
-            "topimg":"./img/C_t_bes.jpg"
+            "topimg":"./img/C_t_bes.jpg",
+            "alt":"냉장고 티징"
         },
         {
             "name": "화이트 한듯안한듯 팬티라이너",
@@ -322,7 +358,8 @@
             "client":"유한킴벌리, SM C&C",
             "concept":"화이트의 신규 팬티라이너 제품인 '한듯안한듯 팬티라이너'의 런칭 캠페인 웹사이트. 제품명을 맞추는 퀴즈 프로모션과 제품명 인지를 위한 제품명 치기 모바일 게임 프로모션 진행",
             "role":"<li>Design</li><li>Planning</li><li>Script</li><li>HTML</li><li>Development</li>",
-            "topimg":"./img/C_t_190708.jpg"
+            "topimg":"./img/C_t_190708.jpg",
+            "alt":"팬티라이너"
         },
         {
             "name": "삼성닷컴 BESPOKE 굿즈 에디션",
@@ -331,7 +368,8 @@
             "client":"삼성전자/제일기획/펑타이코리아",
             "concept":"삼성전자의 비스포크 냉장고와 연계된 굿즈 프로모션 및 소개 콘텐츠 제작",
             "role":"<li>Design</li><li>Planning</li><li>Script</li><li>HTML</li>",
-            "topimg":"./img/C_t_goods.jpg"
+            "topimg":"./img/C_t_goods.jpg",
+            "alt":"굿즈 에디션"
         },
         {
             "name": "동서식품 네버엔딩타라티파티",
@@ -340,7 +378,8 @@
             "client":"삼성전자/제일기획/펑타이코리아",
             "concept":"동서식품의 Tarra 브랜드의 캠페인 웹사이트 제작. 온라인상에서 자신만의 티파티를 꾸밀 수 있도록 각종 오브제를 자유롭게 배치할 수 있는 기능과 완성된 이미지를 공유할 수 있도록 기능 제공",
             "role":"<li>Design</li><li>Planning</li><li>Script</li><li>HTML</li><li>Development</li>",
-            "topimg":"./img/C_t_19050303.jpg"
+            "topimg":"./img/C_t_19050303.jpg",
+            "alt":"네버엔딩타라티파티"
         },
         {
             "name": "라네이처 생리 디톡스 프로그램 웹사이트",
@@ -349,7 +388,8 @@
             "client":"유한킴벌리, SM C&C",
             "concept":"유한킴벌리의 친자연 생리대인 라네이처의 생리 디톡스 키트 프로그램 체험단 모집 웹사이트 제작. 5일간의 생리 디톡스 프로그램 소개와 함께 라네이처 제품 특장점을 함께 제공",
             "role":"<li>Design</li><li>Planning</li><li>Script</li><li>HTML</li><li>Development</li>",
-            "topimg":"./img/C_t_19050302.jpg"
+            "topimg":"./img/C_t_19050302.jpg",
+            "alt":"디톡스"
         },
         {
             "name": "화이트 산뜻하루투두리스트",
@@ -358,7 +398,8 @@
             "client":"유한킴벌리, SM C&C",
             "concept":"유한킴벌리 화이트 에코프레시 제품 신규 홍보를 위한 캠페인 사이트 제작. 생리 때도 평소처럼 지내고 싶은 고객의 투두리스트를 입력하고 공유하는 구조이며, 작성 이벤트 외 매직아이 이벤트를 함께 진행",
             "role":"<li>Design</li><li>Planning</li><li>Script</li><li>HTML</li><li>Development</li>",
-            "topimg":"./img/C_t_19050301.jpg"
+            "topimg":"./img/C_t_19050301.jpg",
+            "alt":"산뜻하루투두리스트"
         }
     ]
 }

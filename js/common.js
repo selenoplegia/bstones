@@ -1,5 +1,6 @@
 const content = document.querySelector('.content');
-const abc = document.querySelectorAll('.content li');
+const upnavinput = document.querySelectorAll('.content li');
+const slideinput = document.querySelectorAll('.last li');
 const upside = document.querySelector('.upside');
 const triggerMenu = document.querySelector('.trigger-menu');
 const xm = document.querySelector('.xm');
@@ -7,7 +8,18 @@ const bm = document.querySelector('.bm');
 const upnav = document.querySelector('.upnav');
 const cg = document.querySelector('.cg');
 
-
+jQuery(function($) {
+    $(".content").css("display", "none");
+    $(".content").fadeIn(2000);
+    $("a.transition").click(function(event){
+        event.preventDefault();
+        linkLocation = this.href;
+        $(".content").fadeOut(1000, redirectPage);
+    });
+    function redirectPage() {
+    window.location = linkLocation;
+    }
+});
 
 function handleWindowSize() {
     const windowWidth = window.innerWidth;
@@ -51,14 +63,29 @@ xm.onclick = function () {
     }
 }
 
+let btn = $('.scrolltop');
+
+$(window).scroll(function () {
+    if ($(window).scrollTop() > 500) {
+        btn.addClass('show');
+    } else {
+        btn.removeClass('show');
+    }
+});
+
+btn.on('click', function (e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: 0 }, '300');
+});
+
 
 $.ajax({
     url: "./data.json",
     success: function (data) {
 
 
-        
-        abc.forEach(function(ele,idx){
+
+        upnavinput.forEach(function (ele, idx) {
             ele.onclick = function () {
                 upside.classList.add('active');
                 cg.style.display = "none";
@@ -67,8 +94,18 @@ $.ajax({
             }
         })
 
-        function item(n){
-            let tags = '', name, category, date, client, concept, role, topimg;
+        slideinput.forEach(function (ele, idx) {
+            ele.onclick = function () {
+                upside.classList.add('active');
+                cg.style.display = "none";
+                xm.style.display = "block";
+                item(idx)
+            }
+        })
+
+
+        function item(n) {
+            let tags = '', name, category, date, client, concept, role, topimg, alt;
 
 
 
@@ -80,7 +117,7 @@ $.ajax({
                 concept = this.concept
                 role = this.role
 
-                if(n == i){
+                if (n == i) {
                     tags = `<div class="content-ex2">
                         <div class="mbh2">
                             <h2>${name}</h2>
@@ -119,31 +156,35 @@ $.ajax({
                             </ul>
                         </dl>
                     </div>`
-                ;
-            }
+                        ;
+                }
             })
             $('.input').html(tags);
-        
 
-        $.each(data.items, function (j) {
-            topimg = this.topimg;
-            let loading = document.createElement('img');
-            loading.src = topimg;
 
-            if(n == j){
-                tags = `<div class="middle-view">
+            $.each(data.items, function (j) {
+                topimg = this.topimg;
+                alt = this.alt;
+                let loading = document.createElement('img');
+                loading.src = topimg;
+
+                if (n == j) {
+                    tags = `<div class="middle-view">
                     <div class="middle-img">
-                        <img src="${topimg}" alt="본죽">
+                        <img src="${topimg}" alt="${alt}">
                     </div>
                 </div>
             </div>`
-            ;
-        }
-        })
-        $('.input2').html(tags);
+                        ;
+                }
+            })
+            $('.input2').html(tags);
         }
     }
 })
+
+
+
 
 
 jQuery(document).ready(function ($) {
@@ -152,8 +193,6 @@ jQuery(document).ready(function ($) {
     let slideWidth = $('.last ul li').width();
     let slideHeight = $('.last ul li').height();
     let sliderUlWidth = slideCount * slideWidth;
-
-    console.log(slideWidth);
 
     $('.last').css({ width: slideWidth, height: slideHeight });
 

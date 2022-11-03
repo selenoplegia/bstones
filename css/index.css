@@ -253,6 +253,46 @@ dd {
     color: #b9b9b9;
 }
 
+.scrolltop {
+    display: inline-block;
+    background-color: #FF9800;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 15px;
+    right: 30px;
+    transition: background-color .3s,
+        opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+.scrolltop::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+}
+
+.scrolltop:hover {
+    cursor: pointer;
+    background-color: #333;
+}
+
+.scrolltop:active {
+    background-color: #555;
+}
+
+.scrolltop.show {
+    opacity: 1;
+    visibility: visible;
+}
 
 
 /* 풋터 */
@@ -270,6 +310,7 @@ footer {
     width: 100%;
     transition: 0.5s;
     transform: translateY(-100%);
+    z-index: 400;
 }
 
 .upside.active {
@@ -425,6 +466,7 @@ footer {
     border: 1px solid #f1f1f1;
     position: absolute;
     left: 83.9%;
+    cursor: pointer;
 }
 
 .control ul {
@@ -639,7 +681,7 @@ footer {
         transition: 1s;
     }
 
-    .content.active{
+    .content.active {
         transform: translateX(-100%);
     }
 
@@ -702,6 +744,49 @@ footer {
         padding: 0 26px;
         color: #b9b9b9;
     }
+
+
+    .scrolltop {
+        display: inline-block;
+        background-color: #FF9800;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        border-radius: 4px;
+        position: fixed;
+        bottom: 15px;
+        right: 10px;
+        transition: background-color .3s, opacity .5s, visibility .5s;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 1000;
+    }
+    
+    .scrolltop::after {
+        content: "\f077";
+        font-family: FontAwesome;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 2em;
+        line-height: 50px;
+        color: #fff;
+    }
+    
+    .scrolltop:hover {
+        cursor: pointer;
+        background-color: #333;
+    }
+    
+    .scrolltop:active {
+        background-color: #555;
+    }
+    
+    .scrolltop.show {
+        opacity: 1;
+        visibility: visible;
+    }
+
+
 
 
 
