@@ -824,7 +824,7 @@ footer {
         display: block;
         color: white;
         font-size: 45px;
-        margin: 30px 60px;
+        margin: 30px auto;
     }
 
     .usnav ul {}
